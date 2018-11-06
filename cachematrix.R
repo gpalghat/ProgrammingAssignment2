@@ -25,7 +25,20 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
+
 ## Write a short comment describing this function
+# cacheSolve takes in a matrix as an argument (2x2)
+# variable m is assigned a value (which is a function invoked 
+#      from the list in makeCacheMatrix )
+# a check is done to confirm if the value of m is empty or not (NULL)
+# if its not null, message stating the data is coming from a chache is sent
+#       followed by the cache value
+#       function stops with the return statement
+# if its null, the value for the matrix is retrieved
+# then the matrix value inverse is calcuated via solve function
+# And m is stored that value
+# master list stores the inverse value by invoking the setinv function
+## End of Function
 
 cacheSolve <- function(x, ...) {
   m <- x$getinv()
